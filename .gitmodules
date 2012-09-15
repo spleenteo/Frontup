@@ -1,0 +1,3 @@
+[submodule "stylesheets/libs/hive"]
+	path = stylesheets/libs/hive
+	url = https://github.com/spleenteo/hive.git
