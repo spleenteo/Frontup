@@ -1,0 +1,7 @@
+// set the refers name of the special font you wish to use
+// put your font into /css/fonts/ directory
+@font-face {
+    font-family: 'special';
+    src: url('fonts/Georgia.eot');
+    src: local('Georgia'), url('fonts/Georgia.ttf') format('truetype');
+}

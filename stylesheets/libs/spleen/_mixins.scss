@@ -1,0 +1,167 @@
+// SPLEENCSS COMMONS contains mixins, extentions and generic classes
+
+// BOX DECORATIONS
+@mixin clearfix(){
+    display: block;
+    height: 1%;
+    &:after {
+        clear: both;
+        content: ' ';
+        display: block;
+        font-size: 0;
+        line-height: 0;
+        visibility: hidden;
+        width: 0;
+        height: 0
+    }
+}
+@mixin shadow($dist: 10px, $blur: 10px, $color: #000) {
+    box-shadow:$dist $dist $blur $color;
+    -webkit-box-shadow: $dist $dist $blur $color;
+    -moz-box-shadow: $dist $dist $blur $color;
+}
+@mixin rounded($radius: 10px) {
+    -moz-border-radius: $radius $radius $radius $radius;
+    -webkit-border-radius: $radius $radius $radius $radius;
+    border-radius: $radius $radius $radius $radius;
+}
+@mixin rotated($angle: 10deg, $oX: "top", $oY: "left") {
+    -moz-transform: rotate($angle);
+    -moz-transform-origin: $oY $oX;
+    -o-transform: rotate($angle);
+    -o-transform-origin: $oY $oX;
+    -webkit-transform: rotate($angle);
+    -webkit-transform-origin: $oY $oX;
+    -ms-transform: rotate($angle);
+    -ms-transform-origin: $oY $oX;
+}
+@mixin animate($t: 1s){
+    -webkit-transition: all $t ease-in-out;
+    -moz-transition: all $t ease-in-out;
+    -o-transition: all $t ease-in-out;
+    -ms-transition: all $t ease-in-out;
+}
+@mixin animation_config($duration: 1s, $delay: 1s, $loop: infinite) {
+    -moz-animation-duration: $duration;
+    -moz-animation-delay: $delay;
+    -moz-animation-iteration-count: $loop;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-delay: $delay;
+    -webkit-animation-iteration-count: $loop;
+}
+@mixin border_reset(){
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+@mixin bg_reset(){
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: top left;
+}
+
+// TYPOGRAPHY
+@mixin font_base{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+@mixin regularFont($size: 1em) {
+    @include font_base();
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: $size;
+}
+@mixin specialFont($size: 1em) {
+    @include font_base();
+    font-family: "special";
+    font-size: $size;
+}
+@mixin jotFont($size: 40px) {
+    @include font_base();
+    font-family: "jot";
+    font-size: $size;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    line-height: 30px;
+}
+
+@mixin columns($number: 2, $gap: 20px){
+    -moz-column-count: $number;
+    -moz-column-gap: $gap;
+    -webkit-column-count: $number;
+    -webkit-column-gap: $gap;
+    column-count: $number;
+    column-gap: $gap;
+}
+@mixin text_shadow($color, $x: 1px, $y: 1px, $blur: 1px) {
+  @if $color == none {
+    text-shadow: none;
+  }
+  @else {
+    text-shadow: $color $x $v $blur;
+  }
+}
+@mixin ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@mixin link($normal, $hover: false, $active: false, $visited: false, $focus: false) {
+    color: $normal;
+    &:active{
+        outline: none;
+    }
+    @if $visited {
+        &:visited {
+            color: $visited;
+        }
+    }
+    @if $focus {
+        &:focus {
+            color: $focus;
+        }
+    }
+    @if $hover {
+        &:hover {
+            color: $hover;
+        }
+    }
+    @if $active {
+        &:active {
+            color: $active;
+        }
+    }
+}
+@mixin delimited_list($separator: ", ") {
+    li {
+        display: inline;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        &:after {
+            content: $separator;
+        }
+        &:last-child {
+            &:after {
+                content: "";
+            }
+        }
+        &.last {
+            &:after {
+                content: "";
+            }
+        }
+    }
+}
+@mixin debug($color: "red", $border: 1px, $zindex: false){
+    border: $border solid $color;
+    @if $zindex {
+        z-index: 1000;
+    }
+}
+
+
+
+
+
+

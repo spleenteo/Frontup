@@ -1,0 +1,6 @@
+@import "../site_mixins";
+@import "../site_colors";
+
+#home{
+    @include clearfix();
+}

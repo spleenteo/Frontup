@@ -1,0 +1,87 @@
+@import "site_mixins";
+@import "site_colors";
+
+
+// DEFINE YOUR GENERIC STYLE FOR TAGS AND CLASSES
+.clearfix {
+    @include clearfix();
+}
+
+body{
+
+}
+
+
+
+// DEFINE THE STRUCTURE OF YOUR BASIC TEMPLATE AND BODY
+
+
+
+
+/* MEDIA QUERY SMALLER THAN */
+/****************************************************************************/
+// SMALLER THAN TABLET LANDSCAPE
+@media only screen and (max-width: 719px){
+
+}
+// SMALLER THAN DESKTOP OR TABLET PORTRAIT
+@media only screen and (max-width: 1023px){
+
+}
+// smaller then 1499 (SMALLER THAN CINEMA DISPLAY)
+@media only screen and (max-width: 1499px){
+
+}
+
+/* BETWEEN SIZES */
+/****************************************************************************/
+// FOR SMARTPHONE LANDSCAPE AND TABLET PORTRAIT ONLY
+@media only screen and (min-width: 321px) and (max-width: 1023px){
+
+}
+// FOR TABLET PORTRAIT AND DESKTOP ONLY
+@media only screen and (min-width: 720px) and (max-width: 1499px){
+
+}
+// FOR SMARTPHONE LANDSCAPE, TABLET PORTRAIT AND DESKTOP ONLY
+@media only screen and (min-width: 321px) and (max-width: 1499px){
+
+}
+
+/* BIGGER THAN */
+/****************************************************************************/
+// FROM SMARTPHONES LANDSCAPE TO BIGGER
+@media only screen and (min-width: 321px){
+
+}
+// FROM TABLET PORTRAIT TO BIGGER
+@media only screen and (min-width: 720px){
+
+}
+// FROM TABLET LANDSCAPE TO BIGGER
+@media only screen and (min-width: 1024px){
+
+}
+
+/* EXACT SIZES */
+/****************************************************************************/
+// SMARTPHONE PORTRAIT
+@media only screen and (max-width: 320px){
+
+}
+// SMARTPHONES LANDSCAPE ONLY
+@media only screen and (min-width: 321px) and (max-width: 719px){
+
+}
+// TABLET PORTRAIL ONLY
+@media only screen and (min-width: 720px) and (max-width: 1023px){
+
+}
+// TABLET LANSDSCAPE or DESKTOP ONLY
+@media only screen and (min-width: 1024px) and (max-width: 1499px){
+
+}
+// CINEMA DISPLAY OR WEB TV
+@media only screen and (min-width: 1500px){
+
+}

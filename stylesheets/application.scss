@@ -1,0 +1,18 @@
+// What is applications SCSS?
+// Here you con import all css files you need for your website
+// and link just this single file into your html head section
+// you'll cache one single file, faster and easier to be mantained
+
+// IMPORT LIBRARIES AND THIRD PARTS CSS
+@import "libs/spleen/spleen";
+// @import "libs/hive/hive";
+
+// IMPORT THE MAIN CSS FILE OF YOUR SITE
+@import "site_main_styles";
+
+// IMPORT SECTIONS
+@import "sections/home";
+
+// IMPORT MODULES
+// @import "modules/";
+
