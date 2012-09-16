@@ -1,7 +1,23 @@
-= SpleenScss =
+= FRONTUP =
 
-This is a set of scss, html, js, slim, sass
-There's a demo file just to show a couple of things.
+This is a collection of scss, html, js, slim, sass
+we use in Cantiere Creativo to setup a our web project (usually in Rails/Railsyard)
+
+You can use this collection even for a simple static project as you can find the compiled scss inside the css folder. Even in a static project I do recommend to use sass/scss with the sass compiler command
+launched on your terminal.
+
+== How to install it ==
+
+Just clone or copy the whole folder's structure at the top (or whereever you prefer) of your public_html folder
+
+== Use it whithin Rails ==
+
+Otherwise, if you use rails, just put the frontup inside the assets folder and then add these lines to your gemfile (be sure to add the specific versione of sass as written hereunder)
+
+ group :assets do
+     gem 'sass', '~> 3.2.0.alpha.244'
+     gem 'sass-rails'
+ end
 
 == The command line for sass ==
 
@@ -9,22 +25,26 @@ The command line for the scss interpreter is:
 
  $> sass -C -t compact --watch [the/scss/main/directory/path]:[your/website/css/directory]
 
+So, the final command to work within this folder will be:
+
+ $> cd [your_project]
+ $> sass -C -t compact --watch stylesheets/:css/
+
+the haml gem will "watch" for any changes to any of the .scss file and will overwrite the style.csc file in css/ folder.
+
 == The filesystem ==
 
 When you clone this project you'll find two differents folders:
 
- spleen_scss/
-   |--css/
-   |--scss/
-  
-So, the final command to work within this space will be:
-
-$> cd [spleen_scss/directory/path]
-$> sass -C -t compact --watch scss/:css/
-
-the haml gem will "watch" for any changes to any of the .scss file and will overwrite the style.csc file in css/ folder.
-
-If you don't want to use the scss system, you can directly use the style.css file and then override it.
-
-
+ css/
+     fonts/
+     img/
+ docs/
+ javascripts/
+ stylesheets/
+     fonts/
+     img/
+     libs/
+     modules/
+     sections/
 
