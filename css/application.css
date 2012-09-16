@@ -178,5 +178,3 @@ form fieldset .medium { width: 45%; }
 /****************************************************************************/
 /* EXACT SIZES */
 /****************************************************************************/
-#home { display: block; height: 1%; }
-#home:after { clear: both; content: ' '; display: block; font-size: 0; line-height: 0; visibility: hidden; width: 0; height: 0; }
