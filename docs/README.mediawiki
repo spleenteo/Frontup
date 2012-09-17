@@ -36,9 +36,6 @@ the haml gem will "watch" for any changes to any of the .scss file and will over
 
 When you clone this project you'll find two differents folders:
 
- css/
-     fonts/
-     img/
  docs/
  javascripts/
  stylesheets/
