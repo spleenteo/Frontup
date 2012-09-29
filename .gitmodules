@@ -1,6 +1,0 @@
-[submodule "stylesheets/libs/hive"]
-	path = stylesheets/libs/hive
-	url = https://github.com/spleenteo/hive.git
-[submodule "javascripts/modernizer"]
-	path = javascripts/modernizer
-	url = https://github.com/Modernizr/Modernizr.git

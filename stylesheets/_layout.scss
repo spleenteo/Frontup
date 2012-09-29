@@ -1,0 +1,14 @@
+@import "config";
+
+// DEFINE YOUR GENERIC BASE STYLE FOR TAGS AND CLASSES
+body{
+}
+footer{
+}
+a{
+
+}
+.clearfix {
+    @include clearfix();
+}
+

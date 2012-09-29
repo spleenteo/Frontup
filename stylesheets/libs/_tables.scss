@@ -1,3 +1,7 @@
+@import "../config";
+@import "../site_mixins";
+@import "../site_colors";
+
 /*  BASIC TABLE STYLES */
 table{
     width: 100%;
@@ -45,5 +49,4 @@ table{
     .right{
         text-align: right;
     }
-
 }

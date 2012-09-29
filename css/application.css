@@ -1,0 +1,60 @@
+/* Libraries and resets */
+/* RESET BROWSER AND HTML STYLES */
+* html, * body, * div, * span, * applet, * object, * iframe, * h1, * h2, * h3, * h4, * h5, * h6, * p, * blockquote, * pre, * a, * abbr, * acronym, * address, * big, * cite, * code, * del, * dfn, * em, * font, * img, * ins, * kbd, * q, * s, * samp, * small, * strike, * strong, * sub, * sup, * tt, * var, * b, * u, * i, * center, * dl, * dt, * dd, * ol, * ul, * li, * fieldset, * form, * label, * legend, * table, * caption, * tbody, * tfoot, * thead, * tr, * th, * td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+* body { line-height: 1; }
+* ul { list-style: none; }
+* blockquote, * q { quotes: none; }
+* blockquote:before, * blockquote:after, * q:before, * q:after { content: ''; content: none; }
+* :focus { outline: 0; }
+* ins { text-decoration: none; }
+* del { text-decoration: line-through; }
+* table { border-collapse: collapse; border-spacing: 0; }
+* article, * aside, * details, * figcaption, * figure, * footer, * header, * hgroup, * menu, * nav, * section { display: block; }
+
+@font-face { font-family: 'special'; src: url("fonts/Georgia.eot"); src: local("Georgia"), url("fonts/Georgia.ttf") format("truetype"); }
+
+/*  BASIC TABLE STYLES */
+table { width: 100%; }
+table td, table th { padding: 5px; vertical-align: top; }
+table thead tr th { font-weight: 600; }
+table thead tr th.short { width: 10%; }
+table thead tr th.medium { width: 30%; }
+table thead tr th.long { width: 60%; }
+table .center { text-align: center; }
+table .right { text-align: right; }
+
+/* BASIC FORMS STYLE */
+form fieldset div.required label:before { content: "* "; }
+form fieldset div.error label { color: #f0f0f0; }
+form fieldset div.error input[type="text"], form fieldset div.error input[type="password"] { border-left: 2px solid #f0f0f0; }
+form fieldset div.error ul.errorlist { color: #f0f0f0; }
+form fieldset div.error ul.errorlist li { font-style: italic; padding-left: 15px; font-size: 90%; }
+form fieldset div.error ul.errorlist li:before { display: inline; }
+form fieldset .inline { display: inline; }
+form fieldset .short { width: 30%; }
+form fieldset .medium { width: 45%; }
+
+/* STYLES FOR ARTUCLES AND READINGS SECTIONS */
+.cms { font-size: 1em; line-height: 1.5em; }
+.cms h1, .cms h2, .cms h3, .cms h4, .cms h5 { margin: .5em 0 .5em 0; }
+.cms h1 span, .cms h2 span, .cms h3 span, .cms h4 span, .cms h5 span { display: none; }
+.cms h1 { font-size: 1.5em; }
+.cms h2 { font-size: 1.3em; }
+.cms h3 { font-size: 1.1em; }
+.cms p img { margin: 5px 5px 5px 0; }
+.cms p img.right { float: right; margin: 5px 0 5px 5px; }
+.cms ul, .cms ol { margin: 1em 3em; }
+.cms ul { list-style: disc; }
+.cms ul li { line-height: 1.5em; }
+.cms blockquote { font-style: italic; padding: .5em 3em; }
+.cms pre { line-height: 1.2em; font-size: 1.1em; font-family: "Courier New", Courier, monospace; margin: .5 0; padding-left: 2em; }
+
+/* BASIC STYLES */
+.clearfix { display: block; height: 1%; }
+.clearfix:after { clear: both; content: ' '; display: block; font-size: 0; line-height: 0; visibility: hidden; width: 0; height: 0; }
+
+/* SITE MODULES */
+/* NAME: This is a module */
+/* SITE SECTIONS */
+/* SECTION HOME */
+/* SITE THEMES */

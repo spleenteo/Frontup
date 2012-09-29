@@ -5,19 +5,22 @@
 
 // MIND THE ORDER!
 
-// 1 - IMPORT LIBRARIES AND THIRD PARTS CSS
+// 1 - IMPORT LIBRARIES AND THIRD PARTIES CSS
 /* Libraries and resets */
-@import "libs/hive/hive";
-@import "libs/spleen/spleen";
+@import "base";
 
 // 2 - IMPORT THE MAIN CSS FILE OF YOUR SITE
-/* here starts the generic styles for the website */
-@import "site_main_styles";
+/* BASIC STYLES */
+@import "layout";
 
-// 3 - IMPORT MODULES
-/* here the modules' styles */
-// @import "modules/";
+// 3 - IMPORT OBJECT MODULES
+/* SITE MODULES */
+@import "modules/module_example";
 
 // 4 - IMPORT SECTIONS
-/* here the sections'styles */
+/* SITE SECTIONS */
 @import "sections/home";
+
+// 5 - IMPORT THEMES
+/* SITE THEMES */
+// @import "themes/blue";
