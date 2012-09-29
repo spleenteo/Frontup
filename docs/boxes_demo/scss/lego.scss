@@ -1,0 +1,81 @@
+/** BOOKREPUBLIC LEGO SYSTEM
+ ** Author Matteo Papadopoulos aka @spleenteo on twitter
+ ** http://www.cantierecreativo.net
+ **/
+
+// public settings
+$wrapper_width: 960px;      // larghezza del contenitore (default 960px) in px o %
+$box_unit:      150px;      // altezza di una singola riga
+$max_boxs:      8;          // il nimero massimo di unità per riga supportate dal sistema
+$box_margin:    5px;        // spaziatura tra box e colonne
+
+
+// private from here
+$width:         100%;       // larghezza di una singola cella
+$unit:          $width / 10;
+
+@mixin clearfix(){
+    display: block;
+    &:after {
+        clear: both;
+        content: ' ';
+        //display: block;
+        font-size: 0;
+        line-height: 0;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+}
+.hive{
+    @include clearfix();
+    width: $width;
+    max-width: $wrapper_width;
+    margin: auto;
+    .cell_10, .cell_20,
+    .cell_25, .cell_30,
+    .cell_33, .cell_40,
+    .cell_50, .cell_60,
+    .cell_66, .cell_70,
+    .cell_75, .cell_80,
+    .cell_90, .cell_100{
+        display: inline;
+        float: left;
+        position: relative;
+    }
+    @for $i from 1 through 10 {
+        .cell_#{$i * 10} { width: $unit * $i; }
+        .pre_#{$i * 10} { padding-left: $unit * $i; }
+        .post_#{$i * 10} { padding-right: $unit * $i; }
+    }
+    .cell_25{ width: $width / 4; }
+    .cell_33{ width: $width / 3; }
+    .cell_66{ width: ($width / 3) * 2; }
+    .cell_75{ width: ($width / 4) * 3; }
+
+    .pre_25{ padding-left: $width / 4; }
+    .pre_33{ padding-left: $width / 3; }
+    .pre_66{ padding-left: ($width / 3) * 2; }
+    .pre_75{ padding-left: ($width / 4) * 3; }
+
+    .post_25{ padding-right: $width / 4; }
+    .post_33{ padding-right: $width / 3; }
+    .post_66{ padding-right: ($width / 3) * 2; }
+    .post_75{ padding-right: ($width / 4) * 3; }
+}
+
+// the box system
+.box_style{
+    position: relative;
+    margin: $box_margin 0 0 $box_margin;
+    //background-color: #ddd;
+    >section{
+        //padding: $box_margin;
+    }
+}
+@for $i from 1 through $max_boxs {
+    .box_#{$i} {
+        @extend .box_style;
+        height: ($box_unit * $i) + ($box_margin * ($i - 1));
+    }
+}

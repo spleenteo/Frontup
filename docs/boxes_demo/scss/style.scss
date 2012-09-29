@@ -1,0 +1,34 @@
+@import "commons";      // common mixin and classes
+@import "colors";       // the main color palette
+
+// DEFINE YOUR GENERIC STYLE FOR TAGS
+body{
+    @include regularFont(1em);
+    color: $cMainText;
+    margin: 0;
+}
+a{
+    @include link($cLinks);
+    text-decoration: none;
+}
+
+
+// DEFINE THE STRUCTURE OF YOUR BASIC TEMPLATE AND BODY
+.box_site_header{
+    section{
+        padding: 5px;
+        header{
+            h1{
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+                  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                  font-size: 30px;
+                  font-weight: normal;
+            }            
+        }
+    }
+}
+
+
+// IMPORTO I VARI TIPI DI BOX CHE VENGONO DISEGNATI
+@import "box/box_single_book";

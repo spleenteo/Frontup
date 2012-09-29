@@ -1,0 +1,63 @@
+/* SPLEEN SCSS LIBRARY */
+/* created by spleenteo http://www.basictrading.biz */
+/********************************************/
+/* RESET BROWSER AND HTML STYLES */
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1.2em; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/********************/
+/* BASIC TABLE STYLE */
+/*********************/
+table { width: 100%; }
+table td, table th { padding: 5px; vertical-align: top; }
+table thead tr th { font-weight: 600; }
+table thead tr th.short { width: 10%; }
+table thead tr th.medium { width: 30%; }
+table thead tr th.long { width: 60%; }
+table .center { text-align: center; }
+table .right { text-align: right; }
+
+/* BASIC FORMS STYLE */
+/*********************/
+form fieldset label span { display: none; }
+form fieldset input, form fieldset textarea, form fieldset select { margin-bottom: 4px; }
+form fieldset div.field { padding: 5px 0; }
+form fieldset div.field .help-text { font-style: italic; }
+form fieldset div.required label { border-left: 2px solid red; }
+form fieldset div.required label:before { content: "* "; }
+form fieldset div.error label { color: red; }
+form fieldset div.error input[type="text"], form fieldset div.error input[type="password"] { border-left: 2px solid red; }
+form fieldset div.error ul.errorlist { color: red; }
+form fieldset div.error ul.errorlist li { font-style: italic; padding-left: 15px; font-size: 90%; }
+form fieldset div.error ul.errorlist li:before { display: inline; }
+form fieldset .inline { display: inline; }
+form fieldset .short { width: 30%; }
+form fieldset .medium { width: 45%; }
+
+.cms { font-size: 1em; line-height: 1.2em; }
+.cms h1, .cms h2, .cms h3, .cms h4, .cms h5 { margin: .5em 0 .5em 0; }
+.cms h1 span, .cms h2 span, .cms h3 span, .cms h4 span, .cms h5 span { display: none; }
+.cms h1 { font-size: 1.5em; }
+.cms h2 { font-size: 1.3em; }
+.cms h3 { font-size: 1.1em; }
+.cms p img { margin: 5px 5px 5px 0; }
+.cms p img.right { float: right; margin: 5px 0 5px 5px; }
+.cms ul, .cms ol { margin: 1em 3em; }
+.cms ul { list-style: disc; }
+.cms ul li { line-height: 1.5em; }
+.cms blockquote { font-style: italic; padding: .5em 3em; }
+.cms pre { line-height: 1.2em; font-size: 1.1em; font-family: "Courier New", Courier, monospace; margin: .5 0; padding-left: 2em; }

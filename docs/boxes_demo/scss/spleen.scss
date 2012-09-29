@@ -1,0 +1,74 @@
+/* SPLEEN SCSS LIBRARY */
+/* created by spleenteo http://www.basictrading.biz */
+/********************************************/
+/*
+
+// Author: Matteo Papadopoulos (aka spleenteo)
+// email: spleenteo@gmail.com
+// from Cantiere Creativo (http://www.cantierecreativo.net) adn Ruby Cube (http://www.ruby-cube.com)
+// ********************
+
+/*
+ * HOW TO USE
+ * Download and link spleen.css library file into your html head
+ * I usually use a modules approach to build my css tree. It means a generic style.css (pra main.css or what else * you prefer) and then create an indipendant css file for each section of the site (home, blog, product ecc)
+ * in each file .scss you'll create include the _commons.scss and _colors.scss files.
+ * the rest of the files (form, tables, cms ecc) will be included in spleen.css
+ */
+
+@import "commons"; // mixin and common classes even for others scss to be implemented
+
+/* RESET BROWSER AND HTML STYLES */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.2em;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/********************/
+
+@import "tables";
+@import "forms";
+@import "cms";

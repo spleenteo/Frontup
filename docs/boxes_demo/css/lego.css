@@ -1,0 +1,64 @@
+/** BOOKREPUBLIC LEGO SYSTEM * Author Matteo Papadopoulos aka @spleenteo on twitter * http://www.cantierecreativo.net */
+.hive { display: block; width: 100%; max-width: 960px; margin: auto; }
+.hive:after { clear: both; content: ' '; font-size: 0; line-height: 0; visibility: hidden; width: 0; height: 0; }
+.hive .cell_10, .hive .cell_20, .hive .cell_25, .hive .cell_30, .hive .cell_33, .hive .cell_40, .hive .cell_50, .hive .cell_60, .hive .cell_66, .hive .cell_70, .hive .cell_75, .hive .cell_80, .hive .cell_90, .hive .cell_100 { display: inline; float: left; position: relative; }
+.hive .cell_10 { width: 10%; }
+.hive .pre_10 { padding-left: 10%; }
+.hive .post_10 { padding-right: 10%; }
+.hive .cell_20 { width: 20%; }
+.hive .pre_20 { padding-left: 20%; }
+.hive .post_20 { padding-right: 20%; }
+.hive .cell_30 { width: 30%; }
+.hive .pre_30 { padding-left: 30%; }
+.hive .post_30 { padding-right: 30%; }
+.hive .cell_40 { width: 40%; }
+.hive .pre_40 { padding-left: 40%; }
+.hive .post_40 { padding-right: 40%; }
+.hive .cell_50 { width: 50%; }
+.hive .pre_50 { padding-left: 50%; }
+.hive .post_50 { padding-right: 50%; }
+.hive .cell_60 { width: 60%; }
+.hive .pre_60 { padding-left: 60%; }
+.hive .post_60 { padding-right: 60%; }
+.hive .cell_70 { width: 70%; }
+.hive .pre_70 { padding-left: 70%; }
+.hive .post_70 { padding-right: 70%; }
+.hive .cell_80 { width: 80%; }
+.hive .pre_80 { padding-left: 80%; }
+.hive .post_80 { padding-right: 80%; }
+.hive .cell_90 { width: 90%; }
+.hive .pre_90 { padding-left: 90%; }
+.hive .post_90 { padding-right: 90%; }
+.hive .cell_100 { width: 100%; }
+.hive .pre_100 { padding-left: 100%; }
+.hive .post_100 { padding-right: 100%; }
+.hive .cell_25 { width: 25%; }
+.hive .cell_33 { width: 33.333%; }
+.hive .cell_66 { width: 66.667%; }
+.hive .cell_75 { width: 75%; }
+.hive .pre_25 { padding-left: 25%; }
+.hive .pre_33 { padding-left: 33.333%; }
+.hive .pre_66 { padding-left: 66.667%; }
+.hive .pre_75 { padding-left: 75%; }
+.hive .post_25 { padding-right: 25%; }
+.hive .post_33 { padding-right: 33.333%; }
+.hive .post_66 { padding-right: 66.667%; }
+.hive .post_75 { padding-right: 75%; }
+
+.box_style, .box_1, .box_2, .box_3, .box_4, .box_5, .box_6, .box_7, .box_8 { position: relative; margin: 5px 0 0 5px; }
+
+.box_1 { height: 150px; }
+
+.box_2 { height: 305px; }
+
+.box_3 { height: 460px; }
+
+.box_4 { height: 615px; }
+
+.box_5 { height: 770px; }
+
+.box_6 { height: 925px; }
+
+.box_7 { height: 1080px; }
+
+.box_8 { height: 1235px; }
