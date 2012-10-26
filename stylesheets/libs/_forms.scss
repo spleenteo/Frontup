@@ -1,4 +1,4 @@
-@import "../site_colors";
+@import "../config";
 
 /* BASIC FORMS STYLE */
 form{
@@ -7,37 +7,19 @@ form{
 
         }
         label{
-            span{
-                // display: none;
-            }
+            span{}
         }
-        input{
-
-        }
-        input, textarea, select{
-            // margin-bottom: 4px;
-        }
-        input[type="text"], input[type="password"], textarea{
-
-        }
-        input[type="radio"], input[type="checkbox"]{
-
-        }
-        textarea{
-
-        }
-        select{
-
-        }
+        input{}
+        input, textarea, select{}
+        input[type="text"], input[type="password"], textarea{}
+        input[type="radio"], input[type="checkbox"]{}
+        textarea{}
+        select{}
         div.field{
-            // padding: 5px 0;
-            .help-text{
-                // font-style: italic;
-            }
+            .help-text{}
         }
         div.required{
             label{
-                // border-left: 2px solid $cRed;
                 &:before{
                     content: "* ";
                 };

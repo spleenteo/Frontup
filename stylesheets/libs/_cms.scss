@@ -1,4 +1,6 @@
-/* STYLES FOR ARTUCLES AND READINGS SECTIONS */
+@import "../config";
+
+/* STYLES FOR ARTICLES AND TYPO SECTIONS */
 .cms{
     font-size: 1em;
     line-height: 1.5em;
@@ -28,20 +30,14 @@
         }
     }
     dl{
-        dt{
-
-        }
-        dd{
-
-        }
+        dt{}
+        dd{}
     }
     ul, ol{
         margin: 1em 3em;
         li{
             a{
-                &:hover{
-
-                };
+                &:hover{};
             }
         }
     }
@@ -49,26 +45,15 @@
         list-style: disc;
         li{
             line-height: 1.5em;
-
-            &:before{
-
-            };
+            &:before{};
         }
     }
     a{
-        &:hover{
-
-        };
+        &:hover{};
     }
-    em{
-
-    }
-    strong{
-
-    }
-    img{
-
-    }
+    em{}
+    strong{}
+    img{}
     blockquote{
         font-style: italic;
         padding: .5em 3em;
@@ -80,7 +65,5 @@
         margin: .5 0;
         padding-left: 2em;
     }
-    code{
-
-    }
+    code{}
 }

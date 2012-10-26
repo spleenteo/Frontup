@@ -1,15 +1,12 @@
 @import "../config";
-@import "../site_mixins";
-@import "../site_colors";
 
-/*  BASIC TABLE STYLES */
+/*  BASIC TABLES STYLES */
 table{
     width: 100%;
     td, th{
-         padding: 5px;
-         vertical-align: top;
-     }
-
+        padding: 5px;
+        vertical-align: top;
+    }
     thead{
         tr{
             th{
@@ -28,19 +25,13 @@ table{
     }
     tbody{
         tr{
-            th{
-
-            }
-            td{
-
-            }
+            th{}
+            td{}
         }
     }
     tfooter{
         tr{
-            td{
-
-            }
+            td{}
         }
     }
     .center{

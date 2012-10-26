@@ -65,24 +65,20 @@
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
-@mixin regularFont($size: 1em) {
-    @include font_base();
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: $size;
-}
 @mixin specialFont($size: 1em) {
     @include font_base();
     font-family: "special";
     font-size: $size;
 }
-@mixin jotFont($size: 40px) {
+@mixin serifFont($size: 1em) {
     @include font_base();
-    font-family: "jot";
+    font-family: "Georgia", "Times New Roman", Times, serif;
     font-size: $size;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: -0.04em;
-    line-height: 30px;
+}
+@mixin sansFont($size: 1em) {
+    @include font_base();
+    font-family: "Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: $size;
 }
 
 @mixin columns($number: 2, $gap: 20px){
@@ -93,12 +89,12 @@
     column-count: $number;
     column-gap: $gap;
 }
-@mixin text_shadow($color, $x: 1px, $y: 1px, $blur: 1px) {
+@mixin textshadow($color, $x: 1px, $y: 1px, $blur: 1px) {
   @if $color == none {
     text-shadow: none;
   }
   @else {
-    text-shadow: $color $x $v $blur;
+    text-shadow: $color $x $y $blur;
   }
 }
 @mixin ellipsis{
@@ -153,12 +149,40 @@
         }
     }
 }
+
+// COLORS
+@mixin hGradient($color1, $color2){
+    background: $color1; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VmZWVlOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlN2U2ZTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left,  $color1 0%, $color2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,$color1), color-stop(100%,$color2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  $color1 0%,$color2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  $color1 0%,$color2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  $color1 0%,$color2 100%); /* IE10+ */
+    background: linear-gradient(to right,  $color1 0%,$color2 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=1 ); /* IE6-8 */
+}
+
 @mixin debug($color: "red", $border: 1px, $zindex: false){
     border: $border solid $color;
     @if $zindex {
         z-index: 1000;
     }
 }
+
+@mixin bg-sprite($name, $repeat: no-repeat, $offset-x: 0, $offset-y: 0){
+    background-image: $s-sprites;
+    background-repeat: $repeat;
+    @include sprite-background-position($s-sprites, $name, $offset-x, $offset-y);
+
+    // if no offsets given, set the dimensions of the element to match the image
+    @if $offset-x == 0 and $offset-y == 0 {
+        @include sprite-dimensions($s-sprites, $name);
+    }
+}
+
+
 
 
 

@@ -10,6 +10,7 @@
 * del { text-decoration: line-through; }
 * table { border-collapse: collapse; border-spacing: 0; }
 * article, * aside, * details, * figcaption, * figure, * footer, * header, * hgroup, * menu, * nav, * section { display: block; }
+* html, * body { height: 100%; min-height: 100%; }
 
 /** THIS SITE USE HIVE SCSS - YET ANOTHER RESPONSIVE GRID SYSTEM * https://github.com/spleenteo/hive */
 @media only screen and (max-width: 680px) { .hive .pre_10 { padding-left: 0; }
@@ -131,7 +132,7 @@
 
 @font-face { font-family: 'special'; src: url("fonts/Georgia.eot"); src: local("Georgia"), url("fonts/Georgia.ttf") format("truetype"); }
 
-/*  BASIC TABLE STYLES */
+/*  BASIC TABLES STYLES */
 table { width: 100%; }
 table td, table th { padding: 5px; vertical-align: top; }
 table thead tr th { font-weight: 600; }
@@ -152,7 +153,7 @@ form fieldset .inline { display: inline; }
 form fieldset .short { width: 30%; }
 form fieldset .medium { width: 45%; }
 
-/* STYLES FOR ARTUCLES AND READINGS SECTIONS */
+/* STYLES FOR ARTICLES AND TYPO SECTIONS */
 .cms { font-size: 1em; line-height: 1.5em; }
 .cms h1, .cms h2, .cms h3, .cms h4, .cms h5 { margin: .5em 0 .5em 0; }
 .cms h1 span, .cms h2 span, .cms h3 span, .cms h4 span, .cms h5 span { display: none; }
