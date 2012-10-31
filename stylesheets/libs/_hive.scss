@@ -1,26 +1,11 @@
 // DON'T CHANGE ANYTHING IN THIS FILE!
 // setup hive in config.scss file
-@import "../config";
 
 /** THIS SITE USE HIVE SCSS - YET ANOTHER RESPONSIVE GRID SYSTEM
  ** https://github.com/spleenteo/hive
  **/
  // Author Matteo Papadopoulos aka @spleenteo
  // http://www.cantierecreativo.net
-@mixin clearfix(){
-    display: block;
-    height: 1%;
-    &:after {
-        clear: both;
-        content: ' ';
-        display: block;
-        font-size: 0;
-        line-height: 0;
-        visibility: hidden;
-        width: 0;
-        height: 0
-    }
-}
 
 $unit: $width / 10;
 @if $responsive == 0 {

@@ -7,15 +7,16 @@
 
 // 1 - IMPORT LIBRARIES AND THIRD PARTIES CSS
 /* Libraries and resets */
-@import "compass/reset";
-@import "libs/hive";
+@import "config";           // scss general configuration file _config.scss
+@include global-reset;      // html / css compass reset
+@import "libs/hive";        // the responsive grid
 @import "libs/fonts";
 @import "libs/tables";
 @import "libs/forms";
 @import "libs/cms";
 
 $s-layout:smart;
-@import "img/s/*.png";
+@import "s/*.png";
 
 // 2 - IMPORT THE MAIN CSS FILE OF YOUR SITE
 /* BASIC STYLES */

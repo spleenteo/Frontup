@@ -1,16 +1,23 @@
+@charset "UTF-8";
 /* Libraries and resets */
-/* RESET BROWSER AND HTML STYLES */
-* html, * body, * div, * span, * applet, * object, * iframe, * h1, * h2, * h3, * h4, * h5, * h6, * p, * blockquote, * pre, * a, * abbr, * acronym, * address, * big, * cite, * code, * del, * dfn, * em, * font, * img, * ins, * kbd, * q, * s, * samp, * small, * strike, * strong, * sub, * sup, * tt, * var, * b, * u, * i, * center, * dl, * dt, * dd, * ol, * ul, * li, * fieldset, * form, * label, * legend, * table, * caption, * tbody, * tfoot, * thead, * tr, * th, * td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
-* body { line-height: 1; }
-* ul { list-style: none; }
-* blockquote, * q { quotes: none; }
-* blockquote:before, * blockquote:after, * q:before, * q:after { content: ''; content: none; }
-* :focus { outline: 0; }
-* ins { text-decoration: none; }
-* del { text-decoration: line-through; }
-* table { border-collapse: collapse; border-spacing: 0; }
-* article, * aside, * details, * figcaption, * figure, * footer, * header, * hgroup, * menu, * nav, * section { display: block; }
-* html, * body { height: 100%; min-height: 100%; }
+body:after { content: "WARNING! SASS DEBUG: ON • change $debug value in _config.scss"; position: fixed; width: 100%; height: 10px; bottom: 0; left: 0; z-index: 999; background-color: red; color: white; padding: 7px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: "Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 9px; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
 /** THIS SITE USE HIVE SCSS - YET ANOTHER RESPONSIVE GRID SYSTEM * https://github.com/spleenteo/hive */
 @media only screen and (max-width: 680px) { .hive .pre_10 { padding-left: 0; }
@@ -168,9 +175,19 @@ form fieldset .medium { width: 45%; }
 .cms blockquote { font-style: italic; padding: .5em 3em; }
 .cms pre { line-height: 1.2em; font-size: 1.1em; font-family: "Courier New", Courier, monospace; margin: .5 0; padding-left: 2em; }
 
+.s-sprite { background: url('img/s-sb7abc425e5.png') no-repeat; }
+
 /* BASIC STYLES */
-.clearfix { display: block; height: 1%; }
-.clearfix:after { clear: both; content: ' '; display: block; font-size: 0; line-height: 0; visibility: hidden; width: 0; height: 0; }
+html, body { height: 100%; min-height: 100%; }
+
+body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body a { color: #f0f0f0; text-decoration: none; }
+body a:hover { text-decoration: underline; }
+body #wrapper { min-height: 100%; position: relative; }
+body #wrapper > header { min-height: 200px; border-bottom: 1px dotted #b3b3b3; }
+body #wrapper #content { padding-bottom: 270px; display: block; height: 1%; }
+body #wrapper #content:after { clear: both; content: ' '; display: block; font-size: 0; line-height: 0; visibility: hidden; width: 0; height: 0; }
+body #wrapper > footer { border: 1px solid green; position: absolute; bottom: 0; width: 100%; min-height: 250px; height: 250px; background-color: #b3b3b3; color: white; }
 
 /* SITE MODULES */
 /* NAME: This is a module */

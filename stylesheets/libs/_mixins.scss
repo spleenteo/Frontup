@@ -15,16 +15,27 @@
         height: 0
     }
 }
-@mixin shadow($dist: 10px, $blur: 10px, $color: #000) {
-    box-shadow:$dist $dist $blur $color;
-    -webkit-box-shadow: $dist $dist $blur $color;
-    -moz-box-shadow: $dist $dist $blur $color;
+@mixin debug($status, $color: red){
+    @if $status == 1 {
+        body{
+            &:after{
+                content: "WARNING! SASS DEBUG: ON • change $debug value in _config.scss";
+                position: fixed;
+                width: 100%;
+                height: 10px;
+                bottom: 0;
+                left: 0;
+                z-index: 999;
+                background-color: $color;
+                color: white;
+                padding: 7px;
+                @include sansFont(9px);
+            }
+        }
+    }
 }
-@mixin rounded($radius: 10px) {
-    -moz-border-radius: $radius $radius $radius $radius;
-    -webkit-border-radius: $radius $radius $radius $radius;
-    border-radius: $radius $radius $radius $radius;
-}
+
+
 @mixin rotated($angle: 10deg, $oX: "top", $oY: "left") {
     -moz-transform: rotate($angle);
     -moz-transform-origin: $oY $oX;
@@ -162,13 +173,6 @@
     background: -ms-linear-gradient(left,  $color1 0%,$color2 100%); /* IE10+ */
     background: linear-gradient(to right,  $color1 0%,$color2 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=1 ); /* IE6-8 */
-}
-
-@mixin debug($color: "red", $border: 1px, $zindex: false){
-    border: $border solid $color;
-    @if $zindex {
-        z-index: 1000;
-    }
 }
 
 @mixin bg-sprite($name, $repeat: no-repeat, $offset-x: 0, $offset-y: 0){

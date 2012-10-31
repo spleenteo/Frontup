@@ -4,7 +4,8 @@ $responsive:        1;          // can be 1 or 0. Will your layout respond to de
                                 // if 0 the $sizeDesktop will be the default size
 $width:             100%;       // except for desktop size the rest of hives will be this percentage (just %)
 $cinemaEnabled:     0;          // is your design ready for cinema display @media
-$footerHeight: 250px;
+$footerHeight:      250px;
+$debug:             1;          // debug mode
 
 // set your sizes for mediaqueries breakes
 $sizeSmartphonePortrait:    320px; // the minimum size
@@ -23,4 +24,5 @@ $box_margin:        5px;        // distance between boxes and cells
 // 3rd parties libs
 @import "compass";
 @import "site_colors";
-@import "site_mixins"
+@import "site_mixins";
+@include debug($debug);
