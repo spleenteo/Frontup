@@ -65,14 +65,18 @@
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
-@mixin bg_reset(){
+@mixin bg_reset($color: transparent, $position: top left){
   background-repeat: no-repeat;
-  background-color: transparent;
-  background-position: top left;
+  background-color: $color;
+  background-position: $position;
 }
 
 // TYPOGRAPHY
 @mixin font_base{
+    line-height: 1.2em;
+    font-smooth: always;
+    zoom: 1;
+    -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
