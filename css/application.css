@@ -1,84 +1,196 @@
-/*
-Syntax error: Undefined mixin 'sansFOnt'.
-        on line 8 of /Users/matteo/Lavoro/projects/frontup/stylesheets/_layout.scss, in `sansFOnt'
-        from line 8 of /Users/matteo/Lavoro/projects/frontup/stylesheets/_layout.scss
-        from line 20 of /Users/matteo/Lavoro/projects/frontup/stylesheets/application.scss
+@charset "UTF-8";
+/* Libraries and resets */
+.s-sprite { background: url('img/s-sb7abc425e5.png') no-repeat; }
 
-Backtrace:
-/Users/matteo/Lavoro/projects/frontup/stylesheets/_layout.scss:8:in `sansFOnt'
-/Users/matteo/Lavoro/projects/frontup/stylesheets/_layout.scss:8
-/Users/matteo/Lavoro/projects/frontup/stylesheets/application.scss:20
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:251:in `visit_mixin'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:318:in `visit_rule'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:225:in `block in visit_import'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:225:in `map'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/tree/root_node.rb:20:in `render'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/engine.rb:315:in `_render'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.3/lib/sass/engine.rb:262:in `render'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/bin/compass:44:in `call'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/bin/compass:19:in `load'
-/Users/matteo/.rvm/gems/ruby-1.9.2-p290/bin/compass:19:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined mixin 'sansFOnt'.\A         on line 8 of /Users/matteo/Lavoro/projects/frontup/stylesheets/_layout.scss, in `sansFOnt'\A         from line 8 of /Users/matteo/Lavoro/projects/frontup/stylesheets/_layout.scss\A         from line 20 of /Users/matteo/Lavoro/projects/frontup/stylesheets/application.scss"; }
+body:after { content: "WARNING! SASS DEBUG: ON • change $debug value in _config.scss"; position: fixed; width: 100%; height: 10px; bottom: 0; left: 0; z-index: 999; background-color: red; color: white; padding: 7px; line-height: 1.2em; font-smooth: always; zoom: 1; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: "Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 9px; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+/** THIS SITE USE HIVE SCSS - YET ANOTHER RESPONSIVE GRID SYSTEM * https://github.com/spleenteo/hive */
+@media only screen and (max-width: 680px) { .hive .pre_10 { padding-left: 0; }
+  .hive .post_10 { padding-right: 0; }
+  .hive .pre_20 { padding-left: 0; }
+  .hive .post_20 { padding-right: 0; }
+  .hive .pre_30 { padding-left: 0; }
+  .hive .post_30 { padding-right: 0; }
+  .hive .pre_40 { padding-left: 0; }
+  .hive .post_40 { padding-right: 0; }
+  .hive .pre_50 { padding-left: 0; }
+  .hive .post_50 { padding-right: 0; }
+  .hive .pre_60 { padding-left: 0; }
+  .hive .post_60 { padding-right: 0; }
+  .hive .pre_70 { padding-left: 0; }
+  .hive .post_70 { padding-right: 0; }
+  .hive .pre_80 { padding-left: 0; }
+  .hive .post_80 { padding-right: 0; }
+  .hive .pre_90 { padding-left: 0; }
+  .hive .post_90 { padding-right: 0; }
+  .hive .pre_100 { padding-left: 0; }
+  .hive .post_100 { padding-right: 0; }
+  .hive .post_25, .hive .pre_25, .hive .post_33, .hive .pre_33, .hive .post_66, .hive .pre_66, .hive .post_75, .hive .pre_75 { padding: 0 !important; } }
+@media only screen and (max-width: 5000px) { .hive { display: block; height: 1%; width: 100%; margin-left: 0%; margin-right: 0%; }
+  .hive:after { clear: both; content: ' '; display: block; font-size: 0; line-height: 0; visibility: hidden; width: 0; height: 0; }
+  .hive .cell_10, .hive .cell_20, .hive .cell_25, .hive .cell_30, .hive .cell_33, .hive .cell_40, .hive .cell_50, .hive .cell_60, .hive .cell_66, .hive .cell_70, .hive .cell_75, .hive .cell_80, .hive .cell_90, .hive .cell_100 { display: inline; float: left; position: relative; }
+  .hive .cell_10 { width: 10%; }
+  .hive .pre_10 { padding-left: 10%; }
+  .hive .post_10 { padding-right: 10%; }
+  .hive .cell_20 { width: 20%; }
+  .hive .pre_20 { padding-left: 20%; }
+  .hive .post_20 { padding-right: 20%; }
+  .hive .cell_30 { width: 30%; }
+  .hive .pre_30 { padding-left: 30%; }
+  .hive .post_30 { padding-right: 30%; }
+  .hive .cell_40 { width: 40%; }
+  .hive .pre_40 { padding-left: 40%; }
+  .hive .post_40 { padding-right: 40%; }
+  .hive .cell_50 { width: 50%; }
+  .hive .pre_50 { padding-left: 50%; }
+  .hive .post_50 { padding-right: 50%; }
+  .hive .cell_60 { width: 60%; }
+  .hive .pre_60 { padding-left: 60%; }
+  .hive .post_60 { padding-right: 60%; }
+  .hive .cell_70 { width: 70%; }
+  .hive .pre_70 { padding-left: 70%; }
+  .hive .post_70 { padding-right: 70%; }
+  .hive .cell_80 { width: 80%; }
+  .hive .pre_80 { padding-left: 80%; }
+  .hive .post_80 { padding-right: 80%; }
+  .hive .cell_90 { width: 90%; }
+  .hive .pre_90 { padding-left: 90%; }
+  .hive .post_90 { padding-right: 90%; }
+  .hive .cell_100 { width: 100%; }
+  .hive .pre_100 { padding-left: 100%; }
+  .hive .post_100 { padding-right: 100%; }
+  .hive .cell_25 { width: 25%; }
+  .hive .cell_33 { width: 33.33333%; }
+  .hive .cell_66 { width: 66.66667%; }
+  .hive .cell_75 { width: 75%; }
+  .hive .pre_25 { padding-left: 25%; }
+  .hive .pre_33 { padding-left: 33.33333%; }
+  .hive .pre_66 { padding-left: 66.66667%; }
+  .hive .pre_75 { padding-left: 75%; }
+  .hive .post_25 { padding-right: 25%; }
+  .hive .post_33 { padding-right: 33.33333%; }
+  .hive .post_66 { padding-right: 66.66667%; }
+  .hive .post_75 { padding-right: 75%; } }
+@media only screen and (max-width: 320px) { .hive .cell_10 { width: 100%; }
+  .hive .cell_20 { width: 100%; }
+  .hive .cell_30 { width: 100%; }
+  .hive .cell_40 { width: 100%; }
+  .hive .cell_50 { width: 100%; }
+  .hive .cell_60 { width: 100%; }
+  .hive .cell_70 { width: 100%; }
+  .hive .cell_80 { width: 100%; }
+  .hive .cell_90 { width: 100%; }
+  .hive .cell_100 { width: 100%; }
+  .hive .cell_25, .hive .cell_33, .hive .cell_66, .hive .cell_75 { width: 100%; } }
+@media only screen and (max-width: 320px) and (min-width: 701px) { .hive .cell_10 { width: 50%; }
+  .hive .cell_10.hived { width: 100%; }
+  .hive .cell_20 { width: 50%; }
+  .hive .cell_20.hived { width: 100%; }
+  .hive .cell_30 { width: 50%; }
+  .hive .cell_30.hived { width: 100%; }
+  .hive .cell_40 { width: 50%; }
+  .hive .cell_40.hived { width: 100%; }
+  .hive .cell_50 { width: 50%; }
+  .hive .cell_50.hived { width: 100%; }
+  .hive .cell_60 { width: 50%; }
+  .hive .cell_60.hived { width: 100%; }
+  .hive .cell_70 { width: 50%; }
+  .hive .cell_70.hived { width: 100%; }
+  .hive .cell_80 { width: 50%; }
+  .hive .cell_80.hived { width: 100%; }
+  .hive .cell_90 { width: 50%; }
+  .hive .cell_90.hived { width: 100%; } }
+@media only screen and (min-width: 960px) and (max-width: 1499px) { .hive { max-width: 960px; margin: auto; } }
+@media only screen and (min-width: 1500px) { .hive { max-width: 960px; margin: auto; } }
+.box_1 { margin: 5px 0 0 5px; height: 150px; overflow: hidden; overflow-y: hidden; position: relative; }
+
+.box_2 { margin: 5px 0 0 5px; height: 305px; overflow: hidden; overflow-y: hidden; position: relative; }
+
+.box_3 { margin: 5px 0 0 5px; height: 460px; overflow: hidden; overflow-y: hidden; position: relative; }
+
+.box_4 { margin: 5px 0 0 5px; height: 615px; overflow: hidden; overflow-y: hidden; position: relative; }
+
+.box_5 { margin: 5px 0 0 5px; height: 770px; overflow: hidden; overflow-y: hidden; position: relative; }
+
+.box_6 { margin: 5px 0 0 5px; height: 925px; overflow: hidden; overflow-y: hidden; position: relative; }
+
+.box_7 { margin: 5px 0 0 5px; height: 1080px; overflow: hidden; overflow-y: hidden; position: relative; }
+
+.box_8 { margin: 5px 0 0 5px; height: 1235px; overflow: hidden; overflow-y: hidden; position: relative; }
+
+.box_9 { margin: 5px 0 0 5px; height: 1390px; overflow: hidden; overflow-y: hidden; position: relative; }
+
+.box_10 { margin: 5px 0 0 5px; height: 1545px; overflow: hidden; overflow-y: hidden; position: relative; }
+
+@font-face { font-family: 'special'; src: url("fonts/Georgia.eot"); src: local("Georgia"), url("fonts/Georgia.ttf") format("truetype"); font-smooth: always; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; zoom: 1; line-height: 1.2em; }
+
+/*  BASIC TABLES STYLES */
+table { width: 100%; }
+table td, table th { padding: 5px; vertical-align: top; }
+table thead tr th { font-weight: 600; }
+table thead tr th.short { width: 10%; }
+table thead tr th.medium { width: 30%; }
+table thead tr th.long { width: 60%; }
+table .center { text-align: center; }
+table .right { text-align: right; }
+
+/* BASIC FORMS STYLE */
+form fieldset div.required label:before { content: "* "; }
+form fieldset div.error label { color: #f0f0f0; }
+form fieldset div.error input[type="text"], form fieldset div.error input[type="password"] { border-left: 2px solid #f0f0f0; }
+form fieldset div.error ul.errorlist { color: #f0f0f0; }
+form fieldset div.error ul.errorlist li { font-style: italic; padding-left: 15px; font-size: 90%; }
+form fieldset div.error ul.errorlist li:before { display: inline; }
+form fieldset .inline { display: inline; }
+form fieldset .short { width: 30%; }
+form fieldset .medium { width: 45%; }
+
+/* STYLES FOR ARTICLES AND TYPO SECTIONS */
+.cms { font-size: 1em; line-height: 1.5em; }
+.cms h1, .cms h2, .cms h3, .cms h4, .cms h5 { margin: .5em 0 .5em 0; }
+.cms h1 span, .cms h2 span, .cms h3 span, .cms h4 span, .cms h5 span { display: none; }
+.cms h1 { font-size: 1.5em; }
+.cms h2 { font-size: 1.3em; }
+.cms h3 { font-size: 1.1em; }
+.cms p img { margin: 5px 5px 5px 0; }
+.cms p img.right { float: right; margin: 5px 0 5px 5px; }
+.cms ul, .cms ol { margin: 1em 3em; }
+.cms ul { list-style: disc; }
+.cms ul li { line-height: 1.5em; }
+.cms blockquote { font-style: italic; padding: .5em 3em; }
+.cms pre { line-height: 1.2em; font-size: 1.1em; font-family: "Courier New", Courier, monospace; margin: .5 0; padding-left: 2em; }
+
+/* BASIC STYLES */
+html, body { height: 100%; min-height: 100%; }
+
+body { line-height: 1.2em; font-smooth: always; zoom: 1; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: "Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 1em; }
+body a { color: #f0f0f0; text-decoration: none; }
+body a:hover { text-decoration: underline; }
+body #wrapper { min-height: 100%; position: relative; }
+body #wrapper > header { min-height: 200px; border-bottom: 1px dotted #b3b3b3; }
+body #wrapper #content { padding-bottom: 270px; display: block; height: 1%; }
+body #wrapper #content:after { clear: both; content: ' '; display: block; font-size: 0; line-height: 0; visibility: hidden; width: 0; height: 0; }
+body #wrapper > footer { border: 1px solid green; position: absolute; bottom: 0; width: 100%; min-height: 250px; height: 250px; background-color: #b3b3b3; color: white; }
+
+/* SITE MODULES */
+/* NAME: This is a module */
+/* SITE SECTIONS */
+/* SECTION HOME */
+/* SITE THEMES */
