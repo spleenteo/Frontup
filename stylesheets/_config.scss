@@ -2,7 +2,7 @@
 $defaultSiteSize:   960px;      // the size in px for desktop or non responsive website
 $responsive:        1;          // can be 1 or 0. Will your layout respond to devices and browsers sizes?
                                 // if 0 the $sizeDesktop will be the default size
-$width:             100%;       // except for desktop size the rest of hives will be this percentage (just %)
+$width:             100%;       // except for desktop size the rest of hives will be this percentage (only %)
 $cinemaEnabled:     0;          // is your design ready for cinema display @media
 $footerHeight:      250px;
 $debug:             1;          // debug mode
@@ -14,12 +14,19 @@ $sizeTabletPortrait:        720px;
 $sizeDesktop:               $defaultSiteSize;
 $sizeCinema:                1500px;
 $cinemaWidth:               90%; // and hive will be at this size (usually 85/90% just to leave some margin)
+                                 // use 100% if you want full width even on cinema display
 
 // configurations for boxes
 // if you need some div with the same height you can use .box_1 to .box_10 classes (see hive.scss)
 $box_unit_height:   150px;      // boxes height is a multiple of a unit. .box_3 means 1x3 units
 $max_boxes:         10;          // the maximum units available for a box
 $box_margin:        5px;        // distance between boxes and cells
+
+// COMPASS CONFIG
+$experimental-support-for-svg: true;
+$s-layout:smart;
+@import "s/*.png";
+
 
 // 3rd parties libs
 @import "compass";
