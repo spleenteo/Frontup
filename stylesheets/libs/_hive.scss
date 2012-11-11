@@ -159,13 +159,30 @@ $unit: $width / 10;
 }
 
 // the box system: if you need same height areas
+$box_heights: "";
 @for $i from 1 through $max_boxes {
+    $h: ($box_unit_height * $i) + ($box_margin * ($i - 1));
+    @if $i == 1{
+        $box_heights: $h;
+    }
+    @else{
+        $box_heights: append($box_heights, $h, comma);
+    }
     .box_#{$i} {
         margin: $box_margin 0 0 $box_margin;
-        height: ($box_unit_height * $i) + ($box_margin * ($i - 1));
+        height: $h;
         overflow: hidden;
-        overflow-y: auto;
+        overflow-y: hidden;
         position: relative;
     }
 }
+@mixin box_height($n){
+    // is the number of the box; its height can be different
+    // and setted in the config file.
+    // You can use this mixin to retrieve the height of the box
+    // it can be usefull to make some math in object use directly the
+    // nth($box_heights, $n) function.
+    height: nth($box_heights, $n);
+}
+
 
