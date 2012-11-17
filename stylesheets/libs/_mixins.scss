@@ -19,7 +19,7 @@
     @if $status == 1 {
         body{
             &:after{
-                content: "WARNING! SASS DEBUG: ON • change $debug value in _config.scss";
+                content: "WARNING! SASS DEBUG: ON - change $debug value in _config.scss";
                 position: fixed;
                 width: 100%;
                 height: 10px;
