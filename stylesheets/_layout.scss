@@ -3,7 +3,6 @@ html,body{
     height: 100%;
     min-height: 100%;
 }
-
 body{
     @include sansFont(1em);
     a{
@@ -18,16 +17,16 @@ body{
             border-bottom: 1px dotted $cGray;
         }
         #content{
-            padding-bottom: $footerHeight + 20px;
+            padding-bottom: $site-footer-height + 20px;
             @include clearfix();
         }
         >footer{
-            border: 1px solid green;
+            border: 1px solid $cGreen;
             position: absolute;
             bottom: 0;
             width: 100%;
-            min-height: $footerHeight;
-            height: $footerHeight;
+            min-height: $site-footer-height;
+            height: $site-footer-height;
             background-color: $cGray;
             color: $cWhite;
         }
