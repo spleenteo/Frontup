@@ -2,24 +2,23 @@
 
 ## What is Frontup?
 
-It is a kind of bootstrap for front end Projects based on Modular CSS techniques.
-As I usually use Rails, I'm using here the file tree of Rails's assets (Rails 3.2 or higher)
+Is a quick way to setup a modular css project.
 
-### In Frontup you'll find:
+It's based on COMPASS and you can find either SASS or SCSS version as you prefer.
 
-_config.scss - a configuration file for several parts
-_base.scss - a collection of @mixins reset, form, tables and typography collection
-libs/_hive.scss - a responsive grid
-application.scss - the main css file that includes oll sections and modules as a bridge
+### CONFIG
 
-You can find every source in scss or a css compiled version "almost ready to use"
+You need to edit the config.rb file to 
 
-## Using Sass
-Be sure to use the right Gem (to compile variables into media queries strings)
 
- Sass 3.2.0.alpha.244
+### COMPILING
 
-and generate the static css if you need'em
+If you don't want to use "compass watch", you can use stardar sass init
 
- cd [assets or frontup directory]
- sass -C -t compact -g --watch ./stylesheets/:./css
+ cd frontup
+ sass -C -t compact -g --watch ./sass/:./css
+
+
+### PROMISE
+
+I'll write something more, promise! If you need any help to understand the structure, contact me directly
