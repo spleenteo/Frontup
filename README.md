@@ -8,7 +8,8 @@ It's based on COMPASS and you can find either SASS or SCSS version as you prefer
 
 ### CONFIG
 
-You need to edit the config.rb file to 
+You need to edit the config.rb file to decide if you want to use the SCSS or SASS version.
+You can delete the other one to avoid useless files
 
 
 ### COMPILING
