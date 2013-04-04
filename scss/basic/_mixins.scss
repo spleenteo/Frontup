@@ -1,90 +1,86 @@
 // usefull mixins to extend compass
 
-@mixin debug($status, $color: red){
-    @if $status == 1 {
-        body{
-            &:after{
-                content: "WARNING! SASS DEBUG: ON - change $debug value in _config.scss";
-                position: fixed;
-                width: 100%;
-                height: 10px;
-                bottom: 0;
-                left: 0;
-                z-index: 999;
-                background-color: $color;
-                color: white;
-                padding: 7px;
-                @include sansFont(9px);
-            }
-        }
+@mixin debug($status, $color: red) {
+  @if $status == 1 {
+    body {
+      &:after {
+        content: "WARNING! SASS DEBUG: ON - change $debug value in _config.scss";
+        position: fixed;
+        width: 100%;
+        height: 10px;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+        background-color: $color;
+        color: white;
+        padding: 7px;
+        @include sans-font(9px);
+      }
     }
+  }
 }
-@mixin animate($t: 1s){
-    -webkit-transition: all $t ease-in-out;
-    -moz-transition: all $t ease-in-out;
-    -o-transition: all $t ease-in-out;
-    -ms-transition: all $t ease-in-out;
+
+@mixin animate($t: 1s) {
+  -webkit-transition: all $t ease-in-out;
+  -moz-transition: all $t ease-in-out;
+  -o-transition: all $t ease-in-out;
+  -ms-transition: all $t ease-in-out;
 }
+
 @mixin animation-config($duration: 1s, $delay: 1s, $loop: infinite) {
-    -moz-animation-duration: $duration;
-    -moz-animation-delay: $delay;
-    -moz-animation-iteration-count: $loop;
-    -webkit-animation-duration: $duration;
-    -webkit-animation-delay: $delay;
-    -webkit-animation-iteration-count: $loop;
+  -moz-animation-duration: $duration;
+  -moz-animation-delay: $delay;
+  -moz-animation-iteration-count: $loop;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-delay: $delay;
+  -webkit-animation-iteration-count: $loop;
 }
-@mixin bg-reset($color: transparent, $position: top left){
+
+@mixin bg-reset($color: transparent, $position: top left) {
   background-repeat: no-repeat;
   background-color: $color;
   background-position: $position;
 }
 
 // TYPOGRAPHY
-@mixin ellipsis{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 @mixin delimited-list($separator: ", ") {
-    li {
-        display: inline;
-        list-style-type: none;
-        margin: 0px;
-        padding: 0px;
-        &:after {
-            content: $separator;
-        }
-        &:last-child {
-            &:after {
-                content: "";
-            }
-        }
-        &.last {
-            &:after {
-                content: "";
-            }
-        }
+  li {
+    display: inline;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    &:after {
+      content: $separator;
     }
-}
-@mixin bg-sprite($name, $display: block, $repeat: no-repeat, $offset-x: 0, $offset-y: 0){
-    // to use this sprite you need
-    // the $s variable setted by default in the config file
-    // and a /img/s directory with at least 1 png file inside
-    background-image: $s-sprites;
-    background-repeat: $repeat;
-    @include sprite-background-position($s-sprites, $name, $offset-x, $offset-y);
-    display: $display;
-
-    // if no offsets given, set the dimensions of the element to match the image
-    @if $offset-x == 0 and $offset-y == 0 {
-        @include sprite-dimensions($s-sprites, $name);
+    &:last-child {
+      &:after {
+        content: "";
+      }
     }
+    &.last {
+      &:after {
+        content: "";
+      }
+    }
+  }
 }
 
-
-
-
-
-
-
-
+@mixin bg-sprite($name, $display: block, $repeat: no-repeat, $offset-x: 0, $offset-y: 0) {
+  // to use this sprite you need
+  // the $s variable setted by default in the config file
+  // and a /img/s directory with at least 1 png file inside
+  background-image: $s-sprites;
+  background-repeat: $repeat;
+  @include sprite-background-position($s-sprites, $name, $offset-x, $offset-y);
+  display: $display;
+  // if no offsets given, set the dimensions of the element to match the image
+  @if $offset-x == 0 and $offset-y == 0 {
+    @include sprite-dimensions($s-sprites, $name);
+  }
+}

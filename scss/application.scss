@@ -7,15 +7,21 @@
 
 // 1 - IMPORT LIBRARIES AND THIRD PARTIES CSS
 /* Libraries and resets */
-@import "basic/config";      // general configuration for colors, hive etc.
-@include global-reset;      // html / css compass reset
-@import "basic/hive";        // the responsive grid
+// general configuration for colors, hive etc.
+@import "basic/config";
+
+// html / css compass reset
+@include global-reset;
+
+// the responsive grid
+// @import basic/hive  // add gem "hive-rails", :github => "stefanoverna/hive-rails", :branch => "master"
+
+// some libs
 @import "basic/fonts";
 @import "basic/tables";
 @import "basic/forms";
 @import "basic/cms";
 @import "basic/media-queries";
-
 
 // 2 - IMPORT THE MAIN CSS FILE OF YOUR SITE
 /* BASIC STYLES */

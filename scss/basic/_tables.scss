@@ -1,29 +1,33 @@
 /*  BASIC TABLES STYLES */
-table.standard-table{
-    caption{}
-    td, th{
-        // generic stye of every kind of cells
-        &.center{ text-align: center; }
-        &.right{ text-align: right; }
+table.standard-table {
+  caption {}
+  td, th {
+    // generic stye of every kind of cells
+    &.center {
+      text-align: center;
     }
-    thead{
-        tr{
-            th{
-                &.short{}
-                &.medium{}
-                &.long{}
-            }
-        }
+    &.right {
+      text-align: right;
     }
-    tbody{
-        tr{
-            th{}
-            td{}
-        }
+  }
+  thead {
+    tr {
+      th {
+        &.short {}
+        &.medium {}
+        &.long {}
+      }
     }
-    tfooter{
-        tr{
-            td{}
-        }
+  }
+  tbody {
+    tr {
+      th {}
+      td {}
     }
+  }
+  tfooter {
+    tr {
+      td {}
+    }
+  }
 }

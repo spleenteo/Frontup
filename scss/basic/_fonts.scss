@@ -2,6 +2,17 @@
 // set the refers name of the special font you wish to use
 // put your font into /css/fonts/ directory
 
+// using a google font
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700,400);
+
+@mixin font-base {
+  font-smooth: always;
+  zoom: 1;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
 @font-face {
   font-family: "BebasNeueRegular";
   src: url("fonts/BebasNeue-webfont.eot");
@@ -10,14 +21,6 @@
   font-style: normal;
 }
 
-@mixin font-base {
-  line-height: 1.2em;
-  font-smooth: always;
-  zoom: 1;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
 
 @mixin special-font($size: 1em) {
   @include font-base;
@@ -33,6 +36,29 @@
 
 @mixin sans-font($size: 1em) {
   @include font-base;
-  font-family: "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Sans-serif, Arial, Verdana;
+  font-size: $size;
+}
+
+@mixin light-font($size: 1em) {
+  @include font-base;
+  font-family: "Open Sans", Sans-serif, Arial;
+  font-weight: 300;
+  font-size: $size;
+}
+
+// using an icon font (download it from http://www.entypo.com/)
+@font-face{
+  font-family: "entypo";
+  src: url("fonts/entypo.eot");
+  src: url("fonts/entypo.eot") format("embedded-opentype"), url("fonts/entypo.woff") format("woff"), url("fonts/entypo.ttf") format("truetype"), url("fonts/entypo.svg#entypo") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@mixin icons-font($size: 24px) {
+  @include font-base;
+  font-family: "entypo";
   font-size: $size;
 }

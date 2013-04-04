@@ -6,16 +6,17 @@
 // MIND THE ORDER!
 
 // 1 - IMPORT LIBRARIES AND THIRD PARTIES CSS
-/* Libraries and resets
+/* Libraries and resets */
+// general configuration for colors, hive etc.
 @import basic/config
 
-// general configuration for colors, hive etc.
+// html / css compass reset
 +global-reset
 
-// html / css compass reset
-@import basic/hive
-
 // the responsive grid
+// @import basic/hive  // add gem "hive-rails", :github => "stefanoverna/hive-rails", :branch => "master" 
+
+// some libs
 @import basic/fonts
 @import basic/tables
 @import basic/forms
@@ -23,19 +24,19 @@
 @import basic/media-queries
 
 // 2 - IMPORT THE MAIN CSS FILE OF YOUR SITE
-/* BASIC STYLES
+/* BASIC STYLES */
 @import layout
 
 // 3 - IMPORT OBJECT MODULES
 // import order is important, deepest mdules first or build a folders structure for each module
-/* SITE MODULES
+/* SITE MODULES */
 @import modules/module_example
 
 // 4 - IMPORT SECTIONS
 // sections are usually templates and specific layouts of your site
-/* SITE SECTIONS
+/* SITE SECTIONS */
 @import sections/home
 
 // 5 - IMPORT THEMES
-/* SITE THEMES
+/* SITE THEMES */
 // @import "themes/blue";

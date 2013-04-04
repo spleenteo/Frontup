@@ -10,9 +10,6 @@
 // CMS, TABLES AND FORMS SETTINGS
 // $cms-margin: 5px;
 
-
-
-
 // **********************************************************
 // PRIVATE VARIABLES
 // **********************************************************
@@ -23,9 +20,8 @@
 // PLS DON'T CHANGE HEREUNDER TILL YOU KNOW WHAT YOUR DOING!
 // **********************************************************
 
-
 // BASIC COLORS LIBRARY
-$c-black: #000;
+$c-black: black;
 $c-blue: #12579c;
 $c-brown: #6e3201;
 $c-beige: #f1f1f3;
@@ -40,18 +36,19 @@ $c-pink: #ff8ba6;
 $c-red: #e10000;
 $c-violet: #8602d1;
 $c-yellow: #ffcf06;
-$c-white: #fff;
+$c-white: white;
 
 $site-debug: false;
 
-
 // COMPASS CONFIG
 $experimental-support-for-svg: true;
-$s-layout:smart;
+$s-layout: smart;
+
 @import "s/*.png";
 
 // 3rd parties libs
 @import "compass";
 @import "site_colors";
 @import "site_mixins";
+
 @include debug($site-debug);
